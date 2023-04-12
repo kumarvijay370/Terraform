@@ -1,0 +1,29 @@
+Resources are managed by Terraform.
+
+HCL Basics 
+
+++++++++++++++++++++
+
+<block> <parameter> {
+    key1 = value1
+    key2 = value2
+}
+
+Steps in TF execution 
+
+1. write code
+2. init - initiate the provider and initiates the directory.
+3. plan - shows the plan and shows what changes will be made as part of the tf.
+4. apply - applies the changes in tf and creates the required infrastructure.
+
+
+terraform show - shows the state of the resources created by terraform.
+
+terraform validate - validates the configuration
+terraform fmt - formts the file in terraform config file.
+terraform show -json - print resources in json.
+terraform providers - shows provider for current configuration
+terraform provider mirror <file path> - mirror the provider infor to target directory.
+terraform output - prints all output <append output name> at end for specific output.
+terraform refresh - refreshes state file.
+terraform graph - print visualization for  dependencies.
